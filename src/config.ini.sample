@@ -4,25 +4,55 @@ config =
 {
     network =
     {
+        // Port on which UDP socket will listen
         port = 28000;
+
+        // IP addresses of PAD sources. Only those addresses will be able to send metadata.
         client_ip = ["127.0.0.1", "10.10.10.10"];
     };
 
     message =
     {
+        // Delimiter, which splits fields in message.
         delimiter = "|";
+
+        // Character, which end message.
         terminator = "^";
     };
 
     output =
     {
+        // Type of program action. Valid types are:
+        // - file - metadata will be stored in file; for example for butt streaming application.
+        // - http - metadata will be send directly to icecast.
         type = "file";
+
+        // Path to file in which metadata will be stored.
+        // If 'type' is set to 'http', this field is ignored.
         file_path = "butt_meta.txt";
+
+        // Icecast server address (IP or domain).
+        // If 'type' is set to 'file', this field is ignored.
         icecast_url = "10.10.10.10";
+
+        // If your icecast server uses SSL, set this to "yes", otherwise "no".
+        // If 'type' is set to 'file', this field is ignored.
         icecast_ssl = "yes";
+
+        // Icecast server port.
+        // If 'type' is set to 'file', this field is ignored.
         icecast_port = 8000;
+
+        // Icecast admin user name.
+        // If 'type' is set to 'file', this field is ignored.
         icecast_user = "admin";
+
+        // Icecast administrative user password.
+        // If 'type' is set to 'file', this field is ignored.
         icecast_password = "password";
+
+        // Icecast mountpoint to which the metadata will be send.
+        // If 'type' is set to 'file', this field is ignored.
         icecast_mountpoint = "/stream";
     };
 }
