@@ -3,17 +3,20 @@
 
 #include <stdint.h>
 
-enum action_type_t {
+enum action_type_t
+{
     WRITE_TO_FILE,
     SEND_HTTP_REQUEST
 };
 
-enum icecast_ssl_t {
+enum icecast_ssl_t
+{
     YES,
     NO
 };
 
-struct app_config_t {
+struct app_config_t
+{
     uint16_t port;
     int client_ips_count;
     const char** client_ips;

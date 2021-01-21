@@ -5,8 +5,9 @@
 #include <stdlib.h>
 #include <stddef.h>
 
-typedef struct list_node {
-    struct list_node *next;
+typedef struct list_node
+{
+    struct list_node* next;
     const char* data;
     int length;
 } token_list_node;
