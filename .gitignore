@@ -1,0 +1,6 @@
+src/config.ini
+src/butt_meta.txt
+src/main
+*.o
+src/.vscode
+src/.dist
