@@ -4,3 +4,4 @@ src/main
 *.o
 src/.vscode
 src/.dist
+bin
