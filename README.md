@@ -35,8 +35,6 @@ In Fedora you can install dependencies with the following command:
 Example config file is in: *src/config.ini.sample*. Comments are in the file.
 
 ## Usage
-=======
-### Compilation
 
 ```./bin/ims --config config.ini```
 
