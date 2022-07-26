@@ -9,9 +9,13 @@ Simple service for sending metadata to icecast server. IMS opens UDP socket, sim
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dgalus/ims/graphs/commit-activity) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/dgalus/ims/blob/main/LICENSE) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/dgalus/ims)
 
+<<<<<<< HEAD
+## Dependencies
+=======
   
 
-## Dependencies
+### Dependencies
+>>>>>>> c29f3a614535a55238a130e3e4bd498d6a84a5c6
 - gcc
 - make
 - libconfig-devel
@@ -21,6 +25,7 @@ In Fedora you can install dependencies with the following command:
 
 ```sudo dnf install gcc libconfig-devel libcurl-devel```
 
+<<<<<<< HEAD
 ## Compilation
 
 1. Install dependencies.
@@ -36,9 +41,13 @@ In Fedora you can install dependencies with the following command:
 Example config file is in: *src/config.ini.sample*. Comments are in the file.
 
 ## Usage
+=======
+### Compilation
+>>>>>>> c29f3a614535a55238a130e3e4bd498d6a84a5c6
 
 ```./bin/ims --config config.ini```
 
+<<<<<<< HEAD
 
 ## Run as docker container
 
@@ -55,4 +64,3 @@ Run docker container with the following command.
 Replace *PORT* with port number specified in configuration file, *CONTAINER_NAME* with preffered container name, and *YOUR_CONFIG_FILE_PATH* with your config file absolute path.
 
 Arguents in *[ ]* are optional. When *--network=host* is used, option *-p PORT:PORT* is omitted.
-
