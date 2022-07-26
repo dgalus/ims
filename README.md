@@ -9,13 +9,8 @@ Simple service for sending metadata to icecast server. IMS opens UDP socket, sim
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/dgalus/ims/graphs/commit-activity) [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/dgalus/ims/blob/main/LICENSE) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/dgalus/ims)
 
-<<<<<<< HEAD
 ## Dependencies
-=======
-  
 
-### Dependencies
->>>>>>> c29f3a614535a55238a130e3e4bd498d6a84a5c6
 - gcc
 - make
 - libconfig-devel
@@ -25,7 +20,6 @@ In Fedora you can install dependencies with the following command:
 
 ```sudo dnf install gcc libconfig-devel libcurl-devel```
 
-<<<<<<< HEAD
 ## Compilation
 
 1. Install dependencies.
@@ -43,11 +37,8 @@ Example config file is in: *src/config.ini.sample*. Comments are in the file.
 ## Usage
 =======
 ### Compilation
->>>>>>> c29f3a614535a55238a130e3e4bd498d6a84a5c6
 
 ```./bin/ims --config config.ini```
-
-<<<<<<< HEAD
 
 ## Run as docker container
 
